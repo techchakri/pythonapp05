@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pythonapp05
+spec:
+  containers:
+    - name: pythonapppod
+      image: jchakravarthi/pythonapp05:1.0
+      ports:
+        - containerPort: 8080
+          name: pythonserver
+          protocol: TCP
